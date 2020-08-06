@@ -1,0 +1,301 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(pimg1.jpg);
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	margin-top: 0;
+}
+
+
+nav{
+	background: rgba(256,256,256,0.3);
+	height: 10vh;
+	width: 100%;
+	color: white;
+	display:flex; justify-content: space-between;
+	align-items: center;
+	position: fixed;
+}
+
+.logo{
+	
+	display: flex;
+}
+
+.logo #logo-image{
+	margin: 10px 10px 10px 20px;
+	display: block;
+	width: 70px;
+	height: 66px;
+
+}
+
+.logo #logo-name{
+	margin: auto;
+	font-size: 50px;
+	font-family: 'Oswald', sans-serif;
+	text-shadow: 3px 1px 5px black;
+}
+
+nav .menu{
+	width: 50%;
+	display: inline-block; justify-content:space-between; 
+}
+
+nav .menu a{
+	padding: 5px 20px; top: 10px; position: relative;
+	text-decoration: none;
+	color: white; font-weight: bold;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+nav .menu a:hover{
+	background-color: rgba(256,256,256,0.4);
+}
+
+nav .menu .active{
+	color: white; 
+	border: 2px solid white;
+	background-color: rgba(0,0,0,0.3);
+}
+
+nav .menu .search-box{
+	float: right;
+}
+
+nav .menu .search-box input{
+	padding: 5px;
+  margin: 10px 0;
+  font-size: 15px;
+  border: none;
+}
+
+nav .menu .search-box button{
+  padding: 5px;
+  margin: 10px 20px 10px 0;
+  background-color: transparent;
+  font-size: 15px; color: white;
+  border: none;
+  cursor: pointer;
+}
+
+nav .menu .search-box button:hover{
+	background-color: rgba(256,256,256,0.7);
+	color: black;
+}
+
+main{
+	width: 100%;
+	height: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-align: center;
+}
+
+
+
+section h1{
+	font-size: 20px; font-weight: 500;
+	text-shadow: 1px 1px 2px black;
+}
+
+section h2{
+	margin: 30px 0 20px 0;
+	font-size: 55px;
+	font-weight: 700;
+	text-shadow: 2px 1px 5px black;
+}
+
+section #p1{
+	font-size: 20px; word-spacing: 2px;
+	margin: 25px;
+	text-shadow: 1px 1px 1px black;
+}
+
+.change-content:after{
+	content: '';
+	animation: changetext 8s infinite linear;
+	color: #00e68a;
+}
+
+@keyframes changetext{
+	0%{content: "PARIS";}
+	10%{content: "GREECE";}
+	20%{content: "AMSTERDAM";}
+	30%{content: "ITALY";}
+	40%{content: "LONDON";}
+	50%{content: "ROME";}
+	60%{content: "NEW YORK";}
+	70%{content: "SWITZERLAND";}
+	80%{content: "SYDNEY";}
+	90%{content: "MEXICO";}
+	100%{content: "PARIS";}
+}
+
+/*<----End of Header---->*/
+
+body{
+	height: 100%;
+	margin: 0;
+	background-color: #0d0d0d;
+	font-size: 16px; font-weight: 400;
+	font-family: "Lato", sans-serif;
+	line-height: 1.8em; color: #fff;
+}
+
+
+header, .pimg2{
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+}
+
+.pimg2{
+	background-image: url('pimg2.jpg');
+	min-height: 500px;
+}
+
+section #p2{
+	width: 800px;
+	text-align: center;
+	margin:30px auto;
+	font-size: 25px;
+	line-height: 50px;
+	font-family: 'Oswald', sans-serif;
+}
+
+h3{
+	font-family: 'Oswald', sans-serif;
+	font-size: 60px; 
+	text-align: center;
+	margin: 50px 50px;
+	text-transform: uppercase;
+}
+
+#p3{
+	font-size: 20px;
+	width: 60%;
+	text-align: justify;
+	margin: auto;
+	padding-top: 30px;
+}
+
+#divider-world{
+	display: block;
+	margin: 70px auto 50px auto;
+	width: 50%;
+}
+
+.box-info{
+	background-color: #fff;
+	height: 500px; 
+	width: 75%;
+	margin: 80px auto;
+	padding:30px 10px;
+	display: flex;
+	justify-content: space-around;
+	line-height: 30px;
+	border-radius: 5px;
+}
+
+.box-info #box1{
+	margin-right: 20px;
+	margin-left: 20px; flex: 1;
+	background-color: white;
+	padding: 10px;
+	border: 2px solid #a6a6a6;
+	border-radius: 5px;
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(box1.jpg);
+	background-size: 110%; background-repeat: no-repeat;
+}
+
+.box-info #box2{
+	margin: 0 10px; flex: 1;
+	background-color: white;
+	padding: 10px;
+	border: 2px solid #a6a6a6;
+	border-radius: 5px;
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(box2.jpg);
+	background-size: 100%; background-repeat: no-repeat;
+	}
+
+.box-info #box3{
+	margin-left: 20px;
+	margin-right: 20px; flex: 1;
+	background-color: white;
+	padding: 10px;
+	border: 2px solid #a6a6a6;
+	border-radius: 5px;
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(box3.jpg);
+	background-size: 120%; background-repeat: no-repeat;
+}
+
+section article .button{
+	display: inline-block;
+  border-radius: 4px;
+  background-color: #fff; 
+  border: none; color: #000; font-weight: bold;
+  text-align: center; font-size: 15px;
+  padding: 10px; width: 100px;
+  transition: all 0.5s; 
+  cursor: pointer; margin: 5px;
+}
+
+section article .button a{
+	text-decoration: none;
+	color: black;
+	
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 10px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+footer{
+	width: 100%;
+	height: 10%;
+	background-color: transparent; font-family: 'Lato', sans-serif;
+	color: white; bottom: 0;
+	text-align: center; position: relative;
+	 
+}
+
+footer .fa{
+  background-color: transparent; color: white;
+  font-size: 30px;
+  margin: 5px;
+  padding: 5px; text-decoration: none;
+}
